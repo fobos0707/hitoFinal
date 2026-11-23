@@ -9,7 +9,7 @@ Ritmo es una plataforma para descubrir conciertos y eventos de música en direct
 | Recurso | Enlace |
 |---|---|
 | Web desplegada | `https://fobos0707.github.io/hitoFinal/` (activa en cuanto se habilite GitHub Pages) |
-| Prototipo de Figma (Proyecto 1) | `https://www.figma.com/design/<fileKey>/…` ← **pegar aquí el enlace real** |
+| Prototipo de Figma (Proyecto 1) | <https://www.figma.com/make/zaHzQkc5gMhns4BZ5LijFy/Hito-2-Ritmo> |
 | Repositorio de GitHub | `https://github.com/fobos0707/hitoFinal` |
 | Tablero Kanban | `https://github.com/users/<usuario>/projects/<n>` ← **pegar aquí la URL real** |
 
@@ -169,10 +169,46 @@ Flujos principales:
 
 ## 4. Fidelidad del desarrollo respecto a Figma
 
-Para comprobar la fidelidad, abrir en paralelo el prototipo de Figma (sección 0) y la web desplegada, a los mismos anchos que usan los *frames* de Figma.
+El prototipo de Figma («Hito 2 Ritmo») es un archivo de **Figma Make** (React) con cuatro pantallas: acceso (login y registro como pestañas), Dashboard, ficha de evento y crear evento. Se ha contrastado su código fuente (estructura, textos, estilos y puntos de ruptura) con la web desarrollada. Para verlo visualmente, abrir ambos enlaces de la sección 0 a los mismos anchos (390, 820 y 1440 px).
 
-| Pantalla | Frame de Figma | Ruta en la web | Verificación |
+### 4.1 Elementos idénticos
+
+| Aspecto | Prototipo de Figma | Web desarrollada |
+|---|---|---|
+| Paleta | `#101820` tinta · `#f65b4e` coral · `#f7f7f3` papel · `#d8f35a` lima · `#85d5de` cielo | Idéntica, como variables CSS en `:root` |
+| Tipografía | DM Sans (texto) y Space Grotesk (titulares) | Idéntica |
+| Puntos de ruptura | Móvil ≤ 700 px · tablet ≤ 1000 px · escritorio > 1000 px | Equivalentes en mobile first: base < 701 px, `min-width: 701px` y `min-width: 1001px` |
+| Barra lateral | 240 px; 200 px en tablet; oculta en móvil con barra inferior de 5 iconos y botón «+» flotante | Idéntica (`--sidebar-width: 200px` → `240px` en ≥ 1001 px) |
+| Dashboard | Destacados `1.25fr / .75fr`; rejilla de 3 columnas (2 en tablet); carrusel horizontal en móvil | Idéntico |
+| Ficha del evento | Hero con degradado, 3 datos, descripción, line-up (`30px 50px 1fr auto`), panel de compra fijo de 360 px | Idéntica |
+| Login / registro | Dos columnas `1.08fr / .92fr`, pestañas, prueba social «+12.000 personas», textos y botón «Entrar en Ritmo» | Idéntico |
+| Crear evento | Cabecera «Da vida a tu próximo evento.», tres bloques (Información, Ubicación, Entradas), tarjeta «Listo para publicar» | Idéntico en textos y campos |
+| Textos y datos | Neon Pulse Festival, Indie Nights, Electric Bloom; entradas General 42 € / VIP 89 €; máximo 6 entradas | Idénticos |
+
+| Pantalla | Ruta en la web | Verificación |
+|---|---|---|
+| Acceso (login) | `login.html` | Contraste por código completado |
+| Acceso (registro) | `registro.html` | Contraste por código completado |
+| Dashboard | `index.html` | Contraste por código completado |
+| Ficha de evento | `detalle.html?id=neon-pulse` | Contraste por código completado |
+| Crear evento | `crear.html` | Contraste por código completado |
+
+### 4.2 Diferencias respecto al prototipo (y por qué)
+
+| # | Prototipo de Figma | Web desarrollada | Motivo |
 |---|---|---|---|
+| 1 | Una sola página React; login y registro son pestañas de la misma pantalla | Cinco páginas HTML; las pestañas enlazan `login.html` y `registro.html` | Requisito del proyecto: sitio multipágina con HTML semántico. |
+| 2 | «Crear evento» es un asistente de **3 pasos** (Continuar / Atrás) | Los tres bloques se muestran en una sola página, con un indicador de pasos que enlaza a cada bloque | Decisión del Hito 1; se valida todo al enviar y el foco va al primer error. |
+| 3 | Cantidad con botones − / + (1–6) | Selector de opciones 1–6 | Mismo límite (6), mejor accesibilidad (radios). |
+| 4 | Compra → modal de éxito directo («Tu noche ya tiene ritmo») | Modal de **confirmación** con resumen y botón «Pagar X €», y después el de éxito | Requisito del Hito 2: modales de confirmación; evita compras accidentales. |
+| 5 | 3 eventos fijos; sin filtros, búsqueda ni menú funcionales (solo estado visual) | 9 eventos simulados; filtros, buscador, favoritos y menú hamburguesa operativos | Requisito del Hito 2: interactividad y renderizado dinámico. |
+| 6 | Validación con `required` nativo (tooltips del navegador) | Validación propia en tiempo real, mensajes en el DOM y `novalidate` | Requisito del Hito 2. |
+| 7 | Género «Jazz» en el filtro, pero no en el selector de crear evento | «Jazz» también en el selector | Coherencia entre filtro y formulario. |
+| 8 | Fecha de la ficha: «Sábado, 24 de mayo» | «Domingo, 24 de mayo» | El 24/05/2026 es domingo; el día se calcula de la fecha real. |
+| 9 | «Mis entradas» y «Mi perfil» sin destino | Igual | Fuera del alcance del proyecto. |
+| 10 | Fotos de Unsplash | Las mismas; si una falla, la tarjeta degrada a fondo oscuro | Evitar icono de imagen rota. |
+
+---|---|---|---|
 | Dashboard | ☐ enlace al frame | `index.html` | ☐ 390 px · ☐ 820 px · ☐ 1440 px |
 | Ficha de evento | ☐ enlace al frame | `detalle.html?id=neon-pulse` | ☐ 390 px · ☐ 1440 px |
 | Crear evento | ☐ enlace al frame | `crear.html` | ☐ 390 px · ☐ 1440 px |

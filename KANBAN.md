@@ -35,6 +35,6 @@ Columnas: **Pendiente → En curso → Completado**. Cada tarjeta puede converti
 - [x] Workflow de GitHub Actions: validar + desplegar en Pages
 - [ ] Publicar el sitio y comprobar la consola en la URL real
 - [ ] Pasar Lighthouse sobre la URL desplegada y anotar la puntuación
-- [ ] Comparar la web con el prototipo de Figma (tabla de fidelidad de la memoria)
-- [ ] Pegar los enlaces reales (web, Figma, repo) en la memoria y el README
+- [x] Comparar la web con el prototipo de Figma (tabla de fidelidad de la memoria)
+- [ ] Pegar en la memoria el enlace del tablero Kanban cuando se cree
 - [x] Redactar la memoria técnica (Markdown + PDF)

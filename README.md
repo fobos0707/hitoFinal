@@ -3,7 +3,7 @@
 Plataforma para descubrir conciertos y eventos de música en directo. Proyecto de Frontend con **HTML5, CSS3 y JavaScript ES6+** sin frameworks ni build.
 
 - 🌐 **Web desplegada:** https://fobos0707.github.io/hitoFinal/ _(activa tras habilitar GitHub Pages)_
-- 🎨 **Prototipo de Figma:** _(pegar enlace real)_
+- 🎨 **Prototipo de Figma:** https://www.figma.com/make/zaHzQkc5gMhns4BZ5LijFy/Hito-2-Ritmo
 - 📄 **Memoria técnica:** [docs/MEMORIA.md](docs/MEMORIA.md) · [PDF](docs/Ritmo_Hito3_Memoria.pdf)
 - 🗂️ **Repositorio:** https://github.com/fobos0707/hitoFinal
 - 📘 **Memoria completa (Hitos 1-3):** [PDF](docs/Ritmo_Memoria_Completa.pdf)
