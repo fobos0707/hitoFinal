@@ -377,8 +377,8 @@ h1, h2, h3, .logo { font-family: var(--font-display); }
 .fact-row { display: grid; gap: 15px; padding-bottom: var(--space-10); border-bottom: 1px solid var(--color-line); }
 .fact { display: flex; align-items: center; gap: var(--space-3); }
 .icon-box { display: grid; place-items: center; flex: none; width: 42px; height: 42px; background: var(--color-coral-tint); color: var(--color-coral); }
-.fact dt { color: var(--color-muted); font-size: var(--fs-2xs); letter-spacing: 0.1em; }
-.fact dd { font-size: 0.75rem; font-weight: 700; }
+.fact__label { display: block; color: var(--color-muted); font-size: var(--fs-2xs); letter-spacing: 0.1em; }
+.fact__value { display: block; font-size: 0.75rem; font-weight: 700; }
 
 .about { padding: 42px 0; }
 .about h2 { margin: var(--space-2) 0 14px; font-size: 1.6875rem; }

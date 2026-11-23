@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101820">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <title>Ritmo · Detalle del evento</title>
   <meta name="description" content="Ficha del evento: line-up, horarios y entradas.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,11 +80,11 @@
 
           <div class="detail-layout">
             <div class="detail-content">
-              <dl class="fact-row">
-                <div class="fact"><span class="icon-box"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg></span><div><dt>FECHA</dt><dd data-campo="fecha"></dd></div></div>
-                <div class="fact"><span class="icon-box"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><dt>HORA</dt><dd data-campo="horario"></dd></div></div>
-                <div class="fact"><span class="icon-box"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><dt>RECINTO</dt><dd data-campo="lugar"></dd></div></div>
-              </dl>
+              <ul class="fact-row">
+                <li class="fact"><span class="icon-box"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg></span><div><span class="fact__label">FECHA</span><strong class="fact__value" data-campo="fecha"></strong></div></li>
+                <li class="fact"><span class="icon-box"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><span class="fact__label">HORA</span><strong class="fact__value" data-campo="horario"></strong></div></li>
+                <li class="fact"><span class="icon-box"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><span class="fact__label">RECINTO</span><strong class="fact__value" data-campo="lugar"></strong></div></li>
+              </ul>
 
               <article class="about">
                 <span class="eyebrow eyebrow--coral">Sobre el evento</span>
