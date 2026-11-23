@@ -70,6 +70,7 @@
       f('nombre').textContent = a.nombre;
       f('estilo').textContent = a.estilo;
       f('hora').textContent = a.hora;
+      f('hora').setAttribute('datetime', a.hora);
       var hueco = f('foto');
       if (a.foto) {
         var foto = h('img', { src: a.foto, alt: 'Foto de ' + a.nombre, loading: 'lazy' });
