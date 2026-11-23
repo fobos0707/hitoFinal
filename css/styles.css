@@ -571,7 +571,7 @@ h1, h2, h3, .logo { font-family: var(--font-display); }
 
 /* Preferencias de usuario */
 @media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; scroll-behavior: auto !important; }
+  *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }
 
 
