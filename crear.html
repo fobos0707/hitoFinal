@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ritmo · Crear evento</title>
+  <meta name="description" content="Publica tu evento musical en tres pasos: información, ubicación y entradas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Navegación lateral (tablet y escritorio) -->
+    <aside class="sidebar">
+      <a class="logo" href="index.html" aria-label="Ritmo, ir al inicio"><span class="logo__mark"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></span><span>RITMO</span></a>
+      <nav class="sidebar__nav" aria-label="Navegación principal">
+          <a href="index.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> Explorar</a>
+          <a href="#"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 0 0 4v5h18v-5a2 2 0 0 0 0-4V3H3v5Z"/><path d="M13 7h4M13 11h4M7 7v6"/></svg> Mis entradas</a>
+          <a href="crear.html" aria-current="page"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg> Crear evento</a>
+      </nav>
+      <div class="sidebar__bottom">
+        <a href="#"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg> Mi perfil</a>
+        <a href="login.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 17l5-5-5-5M15 12H3"/><path d="M14 3h6v18h-6"/></svg> Cerrar sesión</a>
+      </div>
+    </aside>
+
+    <div class="page-column">
+      <!-- Cabecera (móvil) -->
+      <header class="mobile-header">
+        <div class="mobile-header__bar">
+          <a class="logo" href="index.html" aria-label="Ritmo, ir al inicio"><span class="logo__mark"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></span><span>RITMO</span></a>
+          <details class="mobile-menu">
+            <summary class="icon-button" aria-label="Abrir menú"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></summary>
+            <nav class="mobile-menu__nav" aria-label="Menú móvil">
+        <a href="index.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> Explorar</a>
+        <a href="#"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 0 0 4v5h18v-5a2 2 0 0 0 0-4V3H3v5Z"/><path d="M13 7h4M13 11h4M7 7v6"/></svg> Mis entradas</a>
+        <a href="crear.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg> Crear evento</a>
+        <a href="#"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg> Mi perfil</a>
+        <a href="login.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 17l5-5-5-5M15 12H3"/><path d="M14 3h6v18h-6"/></svg> Cerrar sesión</a>
+            </nav>
+          </details>
+        </div>
+      </header>
+
+      <main class="create-page">
+        <a class="back-link" href="index.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg> Cancelar y volver</a>
+        <header class="create-header">
+          <span class="eyebrow eyebrow--coral">Nuevo evento</span>
+          <h1>Da vida a tu próximo evento.</h1>
+          <p>Cuéntanos lo esencial. Podrás editar todos los detalles antes de publicarlo.</p>
+        </header>
+
+        <ol class="stepper" aria-label="Progreso del formulario">
+          <li class="is-active"><a href="#paso-1"><span class="stepper__num">1</span><strong class="stepper__label">Información</strong></a></li>
+          <li class="is-active"><a href="#paso-2"><span class="stepper__num">2</span><strong class="stepper__label">Ubicación</strong></a></li>
+          <li class="is-active"><a href="#paso-3"><span class="stepper__num">3</span><strong class="stepper__label">Entradas</strong></a></li>
+        </ol>
+
+        <form class="create-form" action="crear.html#publicado" method="get">
+          <fieldset class="form-step" id="paso-1">
+            <legend class="visually-hidden">Paso 1: información</legend>
+            <div class="form-title"><span class="icon-box"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></span><div><h2>Información principal</h2><p>Haz que tu evento destaque desde el primer vistazo.</p></div></div>
+            <div class="field"><label for="titulo">Nombre del evento</label><input class="control" id="titulo" name="titulo" required placeholder="Ej. Neon Pulse Festival"></div>
+            <div class="form-grid">
+              <div class="field"><label for="genero">Género musical</label>
+                <select class="control" id="genero" name="genero" required><option value="" selected disabled>Selecciona una categoría</option><option>Electrónica</option><option>Indie</option><option>Rock</option><option>Pop</option></select></div>
+              <div class="field"><label for="artista">Artista principal</label><input class="control" id="artista" name="artista" required placeholder="Nombre del artista o grupo"></div>
+            </div>
+            <div class="field"><label for="descripcion">Descripción</label><textarea class="control" id="descripcion" name="descripcion" rows="5" maxlength="600" required placeholder="Describe la experiencia, el ambiente y lo que hace especial a tu evento..."></textarea><small class="field__hint">Máximo 600 caracteres</small></div>
+          </fieldset>
+
+          <fieldset class="form-step" id="paso-2">
+            <legend class="visually-hidden">Paso 2: fecha y ubicación</legend>
+            <div class="form-title"><span class="icon-box"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><h2>Fecha y ubicación</h2><p>Indica cuándo y dónde tendrá lugar.</p></div></div>
+            <div class="form-grid">
+              <div class="field"><label for="fecha">Fecha</label><input class="control" id="fecha" name="fecha" type="date" required></div>
+              <div class="field"><label for="hora">Hora de inicio</label><input class="control" id="hora" name="hora" type="time" required></div>
+            </div>
+            <div class="field"><label for="recinto">Recinto</label>
+              <select class="control" id="recinto" name="recinto" required><option value="" selected disabled>Selecciona un recinto</option><option>WiZink Center — Madrid</option><option>La Riviera — Madrid</option><option>Razzmatazz — Barcelona</option></select></div>
+            <div class="field"><label for="direccion">Dirección adicional</label><input class="control" id="direccion" name="direccion" placeholder="Información opcional de acceso"></div>
+          </fieldset>
+
+          <fieldset class="form-step" id="paso-3">
+            <legend class="visually-hidden">Paso 3: entradas</legend>
+            <div class="form-title"><span class="icon-box"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 0 0 4v5h18v-5a2 2 0 0 0 0-4V3H3v5Z"/><path d="M13 7h4M13 11h4M7 7v6"/></svg></span><div><h2>Configura las entradas</h2><p>Define disponibilidad y precio para tu público.</p></div></div>
+            <div class="form-grid">
+              <div class="field"><label for="tipo">Tipo de entrada</label><select class="control" id="tipo" name="tipo"><option>General</option><option>VIP</option><option>Grada</option></select></div>
+              <div class="field"><label for="precio">Precio (€)</label><input class="control" id="precio" name="precio" type="number" min="0" required placeholder="42"></div>
+            </div>
+            <div class="form-grid">
+              <div class="field"><label for="cantidad-disp">Cantidad disponible</label><input class="control" id="cantidad-disp" name="cantidad" type="number" min="1" required placeholder="500"></div>
+              <div class="field"><label for="inicio-venta">Fecha de inicio de venta</label><input class="control" id="inicio-venta" name="inicio_venta" type="date" required></div>
+            </div>
+            <div class="summary-card"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg><div><strong>Listo para publicar</strong><p>Podrás revisar y editar el evento desde tu panel de organizador.</p></div></div>
+          </fieldset>
+
+          <div class="form-actions">
+            <a class="btn btn--secondary" href="index.html">Cancelar</a>
+            <button class="btn btn--primary" type="submit">Publicar evento <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+          </div>
+        </form>
+
+      <div class="modal" id="publicado">
+        <a class="modal__backdrop" href="crear.html" aria-label="Cerrar"></a>
+        <section class="success-modal" aria-labelledby="publicado-titulo">
+          <span class="success-modal__icon"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg></span>
+          <span class="eyebrow eyebrow--coral">Evento publicado</span>
+          <h2 id="publicado-titulo">Ya está en el escenario</h2>
+          <p>Tu evento se ha publicado correctamente y ya puede ser descubierto por la comunidad.</p>
+          <a class="btn btn--primary btn--block" href="index.html">Ver en el dashboard <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+        </section>
+      </div>
+      </main>
+
+      <footer class="site-footer">
+        <p>© 2026 Ritmo · <a href="#">Términos</a> · <a href="#">Política de privacidad</a></p>
+      </footer>
+
+      <!-- Navegación inferior (móvil) -->
+      <nav class="bottom-nav" aria-label="Navegación móvil">
+        <a href="index.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 9-8 9 8"/><path d="M5 10v11h14V10M9 21v-6h6v6"/></svg><span>Inicio</span></a>
+        <a href="#"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span>Buscar</span></a>
+        <a class="bottom-nav__create" href="crear.html" aria-label="Crear evento"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></a>
+        <a href="#"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 0 0 4v5h18v-5a2 2 0 0 0 0-4V3H3v5Z"/><path d="M13 7h4M13 11h4M7 7v6"/></svg><span>Entradas</span></a>
+        <a href="#"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>Perfil</span></a>
+      </nav>
+    </div>
+  </div>
+</body>
+</html>

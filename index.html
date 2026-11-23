@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ritmo · Encuentra tu próximo ritmo</title>
+  <meta name="description" content="Descubre conciertos y eventos de música en directo cerca de ti.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Navegación lateral (tablet y escritorio) -->
+    <aside class="sidebar">
+      <a class="logo" href="index.html" aria-label="Ritmo, ir al inicio"><span class="logo__mark"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></span><span>RITMO</span></a>
+      <nav class="sidebar__nav" aria-label="Navegación principal">
+          <a href="index.html" aria-current="page"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> Explorar</a>
+          <a href="#"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 0 0 4v5h18v-5a2 2 0 0 0 0-4V3H3v5Z"/><path d="M13 7h4M13 11h4M7 7v6"/></svg> Mis entradas</a>
+          <a href="crear.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg> Crear evento</a>
+      </nav>
+      <div class="sidebar__bottom">
+        <a href="#"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg> Mi perfil</a>
+        <a href="login.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 17l5-5-5-5M15 12H3"/><path d="M14 3h6v18h-6"/></svg> Cerrar sesión</a>
+      </div>
+    </aside>
+
+    <div class="page-column">
+      <!-- Cabecera (móvil) -->
+      <header class="mobile-header">
+        <div class="mobile-header__bar">
+          <a class="logo" href="index.html" aria-label="Ritmo, ir al inicio"><span class="logo__mark"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></span><span>RITMO</span></a>
+          <details class="mobile-menu">
+            <summary class="icon-button" aria-label="Abrir menú"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></summary>
+            <nav class="mobile-menu__nav" aria-label="Menú móvil">
+        <a href="index.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> Explorar</a>
+        <a href="#"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 0 0 4v5h18v-5a2 2 0 0 0 0-4V3H3v5Z"/><path d="M13 7h4M13 11h4M7 7v6"/></svg> Mis entradas</a>
+        <a href="crear.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg> Crear evento</a>
+        <a href="#"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg> Mi perfil</a>
+        <a href="login.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 17l5-5-5-5M15 12H3"/><path d="M14 3h6v18h-6"/></svg> Cerrar sesión</a>
+            </nav>
+          </details>
+        </div>
+      </header>
+
+      <main class="dashboard">
+        <header class="dashboard__top">
+          <div>
+            <span class="eyebrow eyebrow--coral">Madrid · España</span>
+            <h1>Encuentra tu próximo ritmo.</h1>
+          </div>
+          <p class="user-chip">
+            <span class="user-chip__avatar" aria-hidden="true">MC</span>
+            <span class="user-chip__name"><strong>Marina Costa</strong><small>Exploradora musical</small></span>
+          </p>
+        </header>
+
+        <form class="search-bar" role="search" action="index.html">
+          <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+          <input type="search" name="q" aria-label="Buscar eventos" placeholder="Busca artistas, eventos o recintos...">
+          <button class="search-bar__place" type="button"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg> Madrid</button>
+        </form>
+
+        <section aria-labelledby="titulo-destacados">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow eyebrow--coral">Selección para ti</span>
+              <h2 id="titulo-destacados">Eventos destacados</h2>
+            </div>
+            <a class="link-more" href="#explorar"><span class="link-more__text">Ver todos</span><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+          </div>
+          <div class="featured-grid">
+            <article class="event-card event-card--featured">
+          <div class="event-card__media">
+            <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=1200&q=85" alt="" loading="lazy">
+            <span class="tag">Electrónica</span>
+            <label class="heart-button"><input class="visually-hidden" type="checkbox" aria-label="Guardar Neon Pulse Festival"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></label>
+            <span class="tag tag--featured">Destacado</span>
+          </div>
+          <div class="event-card__body">
+            <p class="date-block"><strong>24</strong><span>MAY</span></p>
+            <div>
+              <h3 class="event-card__title"><a class="event-card__link" href="detalle.html">Neon Pulse Festival</a></h3>
+              <p class="event-card__meta"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>WiZink Center, Madrid</p>
+              <p class="event-card__meta"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><time>20:30</time></p>
+            </div>
+            <p class="price-block"><small>Desde</small><strong>42 €</strong></p>
+          </div>
+        </article>
+            <div class="mini-events">
+              <article class="event-card">
+          <div class="event-card__media">
+            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=85" alt="" loading="lazy">
+            <span class="tag">Indie rock</span>
+            <label class="heart-button"><input class="visually-hidden" type="checkbox" aria-label="Guardar Indie Nights"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></label>
+          </div>
+          <div class="event-card__body">
+            <p class="date-block"><strong>07</strong><span>JUN</span></p>
+            <div>
+              <h3 class="event-card__title"><a class="event-card__link" href="detalle.html">Indie Nights</a></h3>
+              <p class="event-card__meta"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>La Riviera, Madrid</p>
+              <p class="event-card__meta"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><time>21:00</time></p>
+            </div>
+            <p class="price-block"><small>Desde</small><strong>28 €</strong></p>
+          </div>
+        </article>
+              <article class="event-card">
+          <div class="event-card__media">
+            <img src="https://images.unsplash.com/photo-1603910234616-3b5f4a6be2b4?auto=format&fit=crop&w=1200&q=85" alt="" loading="lazy">
+            <span class="tag">House</span>
+            <label class="heart-button"><input class="visually-hidden" type="checkbox" aria-label="Guardar Electric Bloom"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></label>
+          </div>
+          <div class="event-card__body">
+            <p class="date-block"><strong>18</strong><span>JUN</span></p>
+            <div>
+              <h3 class="event-card__title"><a class="event-card__link" href="detalle.html">Electric Bloom</a></h3>
+              <p class="event-card__meta"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Razzmatazz, Barcelona</p>
+              <p class="event-card__meta"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><time>22:00</time></p>
+            </div>
+            <p class="price-block"><small>Desde</small><strong>35 €</strong></p>
+          </div>
+        </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="explore" id="explorar" aria-labelledby="titulo-explorar">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow eyebrow--coral">Cerca de ti</span>
+              <h2 id="titulo-explorar">Explora todos los eventos</h2>
+            </div>
+          </div>
+          <ul class="filter-row" aria-label="Filtrar por género">
+            <li><label class="chip"><input class="visually-hidden" type="radio" name="filtro" id="f-todos" checked>Todos</label></li><li><label class="chip"><input class="visually-hidden" type="radio" name="filtro" id="f-electronica">Electrónica</label></li><li><label class="chip"><input class="visually-hidden" type="radio" name="filtro" id="f-indie">Indie</label></li><li><label class="chip"><input class="visually-hidden" type="radio" name="filtro" id="f-pop">Pop</label></li><li><label class="chip"><input class="visually-hidden" type="radio" name="filtro" id="f-rock">Rock</label></li><li><label class="chip"><input class="visually-hidden" type="radio" name="filtro" id="f-jazz">Jazz</label></li>
+          </ul>
+          <ul class="event-list">
+            <li data-category="electronica">
+        <article class="event-card">
+          <div class="event-card__media">
+            <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=1200&q=85" alt="" loading="lazy">
+            <span class="tag">Electrónica</span>
+            <label class="heart-button"><input class="visually-hidden" type="checkbox" aria-label="Guardar Neon Pulse Festival"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></label>
+          </div>
+          <div class="event-card__body">
+            <p class="date-block"><strong>24</strong><span>MAY</span></p>
+            <div>
+              <h3 class="event-card__title"><a class="event-card__link" href="detalle.html">Neon Pulse Festival</a></h3>
+              <p class="event-card__meta"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>WiZink Center, Madrid</p>
+              <p class="event-card__meta"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><time>20:30</time></p>
+            </div>
+            <p class="price-block"><small>Desde</small><strong>42 €</strong></p>
+          </div>
+        </article>
+            </li>
+            <li data-category="indie">
+        <article class="event-card">
+          <div class="event-card__media">
+            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=85" alt="" loading="lazy">
+            <span class="tag">Indie rock</span>
+            <label class="heart-button"><input class="visually-hidden" type="checkbox" aria-label="Guardar Indie Nights"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></label>
+          </div>
+          <div class="event-card__body">
+            <p class="date-block"><strong>07</strong><span>JUN</span></p>
+            <div>
+              <h3 class="event-card__title"><a class="event-card__link" href="detalle.html">Indie Nights</a></h3>
+              <p class="event-card__meta"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>La Riviera, Madrid</p>
+              <p class="event-card__meta"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><time>21:00</time></p>
+            </div>
+            <p class="price-block"><small>Desde</small><strong>28 €</strong></p>
+          </div>
+        </article>
+            </li>
+            <li data-category="electronica">
+        <article class="event-card">
+          <div class="event-card__media">
+            <img src="https://images.unsplash.com/photo-1603910234616-3b5f4a6be2b4?auto=format&fit=crop&w=1200&q=85" alt="" loading="lazy">
+            <span class="tag">House</span>
+            <label class="heart-button"><input class="visually-hidden" type="checkbox" aria-label="Guardar Electric Bloom"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></label>
+          </div>
+          <div class="event-card__body">
+            <p class="date-block"><strong>18</strong><span>JUN</span></p>
+            <div>
+              <h3 class="event-card__title"><a class="event-card__link" href="detalle.html">Electric Bloom</a></h3>
+              <p class="event-card__meta"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Razzmatazz, Barcelona</p>
+              <p class="event-card__meta"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><time>22:00</time></p>
+            </div>
+            <p class="price-block"><small>Desde</small><strong>35 €</strong></p>
+          </div>
+        </article>
+            </li>
+          </ul>
+          <p class="empty-message">No hay eventos de este género por ahora.</p>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© 2026 Ritmo · <a href="#">Términos</a> · <a href="#">Política de privacidad</a></p>
+      </footer>
+
+      <!-- Navegación inferior (móvil) -->
+      <nav class="bottom-nav" aria-label="Navegación móvil">
+        <a href="index.html" aria-current="page"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 9-8 9 8"/><path d="M5 10v11h14V10M9 21v-6h6v6"/></svg><span>Inicio</span></a>
+        <a href="#"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span>Buscar</span></a>
+        <a class="bottom-nav__create" href="crear.html" aria-label="Crear evento"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></a>
+        <a href="#"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 0 0 4v5h18v-5a2 2 0 0 0 0-4V3H3v5Z"/><path d="M13 7h4M13 11h4M7 7v6"/></svg><span>Entradas</span></a>
+        <a href="#"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>Perfil</span></a>
+      </nav>
+    </div>
+  </div>
+</body>
+</html>
