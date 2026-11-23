@@ -10,7 +10,7 @@ Ritmo es una plataforma para descubrir conciertos y eventos de música en direct
 |---|---|
 | Web desplegada | `https://<usuario>.github.io/<repositorio>/` ← **pegar aquí la URL real** |
 | Prototipo de Figma (Proyecto 1) | `https://www.figma.com/design/<fileKey>/…` ← **pegar aquí el enlace real** |
-| Repositorio de GitHub | `https://github.com/<usuario>/<repositorio>` ← **pegar aquí la URL real** |
+| Repositorio de GitHub | `https://github.com/fobos0707/hitoFinal` |
 | Tablero Kanban | `https://github.com/users/<usuario>/projects/<n>` ← **pegar aquí la URL real** |
 
 > Cuenta de prueba para la web: `marina@ritmo.com` / `Ritmo2026` (hay un botón «Rellenar» en el login).

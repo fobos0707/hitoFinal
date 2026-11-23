@@ -5,6 +5,8 @@ Plataforma para descubrir conciertos y eventos de música en directo. Proyecto d
 - 🌐 **Web desplegada:** `https://<usuario>.github.io/<repositorio>/` _(pegar URL real)_
 - 🎨 **Prototipo de Figma:** _(pegar enlace real)_
 - 📄 **Memoria técnica:** [docs/MEMORIA.md](docs/MEMORIA.md) · [PDF](docs/Ritmo_Hito3_Memoria.pdf)
+- 🗂️ **Repositorio:** https://github.com/fobos0707/hitoFinal
+- 📘 **Memoria completa (Hitos 1-3):** [PDF](docs/Ritmo_Memoria_Completa.pdf)
 - 📋 **Tablero Kanban:** [KANBAN.md](KANBAN.md) · _(pegar enlace al GitHub Project)_
 
 ## Probar en local
