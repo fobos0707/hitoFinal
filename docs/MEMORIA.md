@@ -8,7 +8,7 @@ Ritmo es una plataforma para descubrir conciertos y eventos de música en direct
 
 | Recurso | Enlace |
 |---|---|
-| Web desplegada | `https://<usuario>.github.io/<repositorio>/` ← **pegar aquí la URL real** |
+| Web desplegada | `https://fobos0707.github.io/hitoFinal/` (activa en cuanto se habilite GitHub Pages) |
 | Prototipo de Figma (Proyecto 1) | `https://www.figma.com/design/<fileKey>/…` ← **pegar aquí el enlace real** |
 | Repositorio de GitHub | `https://github.com/fobos0707/hitoFinal` |
 | Tablero Kanban | `https://github.com/users/<usuario>/projects/<n>` ← **pegar aquí la URL real** |
@@ -254,7 +254,7 @@ node tests/e2e.js          # 21 comprobaciones OK, 0 errores de consola
 1. Crear el repositorio en GitHub y subir el código (`git push -u origin main`).
 2. En **Settings → Pages → Build and deployment → Source**, elegir **GitHub Actions**.
 3. El flujo `.github/workflows/pages.yml` se ejecuta en cada *push* a `main`: primero **valida HTML y CSS con el validador W3C** (si hay un error, no se publica) y después despliega.
-4. La URL queda como `https://<usuario>.github.io/<repositorio>/`. Todas las rutas del proyecto son **relativas**, así que funciona en la subcarpeta del repositorio.
+4. La URL queda como `https://fobos0707.github.io/hitoFinal/`. Todas las rutas del proyecto son **relativas**, así que funciona en la subcarpeta del repositorio.
 
 ### Opción B · Netlify
 
