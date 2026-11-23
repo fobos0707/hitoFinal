@@ -9,6 +9,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/mockData.js" defer></script>
+  <script src="js/core.js" defer></script>
+  <script src="js/modal.js" defer></script>
+  <script src="js/validacion.js" defer></script>
+  <script src="js/auth.js" defer></script>
 </head>
 <body>
   <main class="auth-page">
@@ -41,7 +46,7 @@
           <a href="registro.html">Registrarme</a>
         </nav>
 
-        <form action="index.html" method="get">
+        <form id="form-login" action="index.html" method="get" novalidate>
           <div class="field">
             <label for="email">Email</label>
             <span class="input-shell"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><input id="email" name="email" type="email" autocomplete="email" placeholder="nombre@ejemplo.com" required></span>
@@ -52,6 +57,7 @@
           </div>
           <button class="btn btn--primary btn--block" type="submit">Entrar en Ritmo <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
         </form>
+        <p class="demo-hint">Cuenta de prueba: <code>marina@ritmo.com</code> · <code>Ritmo2026</code> <button class="demo-hint__btn" type="button" id="rellenar-demo">Rellenar</button></p>
         <p class="terms">Al continuar, aceptas nuestros <a href="#">Términos</a> y <a href="#">Política de privacidad</a>.</p>
       </div>
     </section>

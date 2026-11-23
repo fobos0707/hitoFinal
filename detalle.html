@@ -3,12 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ritmo · Neon Pulse Festival</title>
-  <meta name="description" content="Neon Pulse Festival, 24 de mayo en el WiZink Center de Madrid. Line-up, horarios y entradas.">
+  <title>Ritmo · Detalle del evento</title>
+  <meta name="description" content="Ficha del evento: line-up, horarios y entradas.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/mockData.js" defer></script>
+  <script src="js/core.js" defer></script>
+  <script src="js/modal.js" defer></script>
+  <script src="js/layout.js" defer></script>
+  <script src="js/detalle.js" defer></script>
 </head>
 <body>
   <div class="app-shell">
@@ -22,7 +27,7 @@
       </nav>
       <div class="sidebar__bottom">
         <a href="#"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg> Mi perfil</a>
-        <a href="login.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 17l5-5-5-5M15 12H3"/><path d="M14 3h6v18h-6"/></svg> Cerrar sesión</a>
+        <a href="login.html" data-accion="cerrar-sesion"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 17l5-5-5-5M15 12H3"/><path d="M14 3h6v18h-6"/></svg> Cerrar sesión</a>
       </div>
     </aside>
 
@@ -31,116 +36,99 @@
       <header class="mobile-header">
         <div class="mobile-header__bar">
           <a class="logo" href="index.html" aria-label="Ritmo, ir al inicio"><span class="logo__mark"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></span><span>RITMO</span></a>
-          <details class="mobile-menu">
-            <summary class="icon-button" aria-label="Abrir menú"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></summary>
-            <nav class="mobile-menu__nav" aria-label="Menú móvil">
+          <div class="mobile-menu">
+            <button class="icon-button mobile-menu__toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-movil"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+            <nav class="mobile-menu__nav" id="menu-movil" aria-label="Menú móvil" hidden>
         <a href="index.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg> Explorar</a>
         <a href="#"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 0 0 4v5h18v-5a2 2 0 0 0 0-4V3H3v5Z"/><path d="M13 7h4M13 11h4M7 7v6"/></svg> Mis entradas</a>
         <a href="crear.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg> Crear evento</a>
         <a href="#"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg> Mi perfil</a>
-        <a href="login.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 17l5-5-5-5M15 12H3"/><path d="M14 3h6v18h-6"/></svg> Cerrar sesión</a>
+        <a href="login.html" data-accion="cerrar-sesion"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 17l5-5-5-5M15 12H3"/><path d="M14 3h6v18h-6"/></svg> Cerrar sesión</a>
             </nav>
-          </details>
+          </div>
         </div>
       </header>
 
       <main class="detail-page">
         <a class="back-link" href="index.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg> Volver a eventos</a>
 
-        <header class="detail-hero">
-          <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=1200&q=85" alt="Escenario con luces de neón durante el festival">
-          <div class="detail-hero__gradient"></div>
-          <div class="detail-hero__content">
-            <span class="tag">Electrónica</span>
-            <span class="eyebrow">24 mayo · Madrid</span>
-            <h1>Neon Pulse<br>Festival</h1>
-            <p>Una noche. Tres escenarios. Energía infinita.</p>
-          </div>
-          <label class="heart-button"><input class="visually-hidden" type="checkbox" aria-label="Guardar Neon Pulse Festival"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></label>
-        </header>
+        <!-- La ficha se genera con js/detalle.js a partir de ?id=... -->
+        <div id="detalle-contenido"></div>
 
-        <div class="detail-layout">
-          <div class="detail-content">
-            <dl class="fact-row">
-              <div class="fact"><span class="icon-box"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg></span><div><dt>FECHA</dt><dd>Sábado, 24 de mayo</dd></div></div>
-              <div class="fact"><span class="icon-box"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><dt>HORA</dt><dd>20:30 — 05:00</dd></div></div>
-              <div class="fact"><span class="icon-box"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><dt>RECINTO</dt><dd>WiZink Center, Madrid</dd></div></div>
-            </dl>
-
-            <article class="about">
-              <span class="eyebrow eyebrow--coral">Sobre el evento</span>
-              <h2>La ciudad se ilumina esta noche</h2>
-              <p>Neon Pulse reúne a los artistas más vibrantes de la escena electrónica en una experiencia audiovisual inmersiva. Prepárate para sentir el ritmo, perder la noción del tiempo y bailar hasta el amanecer.</p>
-            </article>
-
-            <section aria-labelledby="titulo-lineup">
-              <div class="section-heading">
-                <div>
-                  <span class="eyebrow eyebrow--coral">Line-up</span>
-                  <h2 id="titulo-lineup">Artistas que harán vibrar la noche</h2>
-                </div>
-              </div>
-              <ol class="artist-list">
-            <li>
-              <span class="artist-list__num">01</span>
-              <img src="https://images.unsplash.com/photo-1619229725920-ac8b63b0631a?auto=format&fit=crop&w=200&q=80" alt="Foto de Luna K" loading="lazy">
-              <p class="artist-list__name"><strong>Luna K</strong><small>Techno melódico</small></p>
-              <small><time>00:30</time></small>
-            </li>
-            <li>
-              <span class="artist-list__num">02</span>
-              <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=200&q=80" alt="Foto de Solaris" loading="lazy">
-              <p class="artist-list__name"><strong>Solaris</strong><small>Progressive house</small></p>
-              <small><time>23:00</time></small>
-            </li>
-            <li>
-              <span class="artist-list__num">03</span>
-              <img src="https://images.unsplash.com/photo-1563841930606-67e2bce48b78?auto=format&fit=crop&w=200&q=80" alt="Foto de NØVA" loading="lazy">
-              <p class="artist-list__name"><strong>NØVA</strong><small>Electropop</small></p>
-              <small><time>21:30</time></small>
-            </li>
-              </ol>
-            </section>
-          </div>
-
-          <aside class="ticket-box" aria-labelledby="titulo-entradas">
-            <span class="eyebrow eyebrow--coral">Elige tu experiencia</span>
-            <h2 id="titulo-entradas">Tus entradas</h2>
-            <form action="detalle.html#compra" method="get">
-              <fieldset class="ticket-options">
-                <legend class="visually-hidden">Tipo de entrada</legend>
-                <label class="ticket-option">
-                  <input class="visually-hidden" type="radio" name="tipo" value="General" id="t-general" checked>
-                  <span><strong>General</strong><small>Acceso al recinto</small></span>
-                  <strong>42 €</strong>
-                </label>
-                <label class="ticket-option">
-                  <input class="visually-hidden" type="radio" name="tipo" value="VIP" id="t-vip">
-                  <span><strong>VIP Experience</strong><small>Fast lane + zona VIP</small></span>
-                  <strong>89 €</strong>
-                </label>
-              </fieldset>
-              <fieldset class="qty">
-                <legend class="qty__label"><strong>Cantidad</strong><small>Máximo 6 entradas</small></legend>
-                <div class="qty__options"><label class="qty__opt"><input class="visually-hidden" type="radio" name="cantidad" value="1" id="q1" checked><span>1</span></label><label class="qty__opt"><input class="visually-hidden" type="radio" name="cantidad" value="2" id="q2"><span>2</span></label><label class="qty__opt"><input class="visually-hidden" type="radio" name="cantidad" value="3" id="q3"><span>3</span></label><label class="qty__opt"><input class="visually-hidden" type="radio" name="cantidad" value="4" id="q4"><span>4</span></label><label class="qty__opt"><input class="visually-hidden" type="radio" name="cantidad" value="5" id="q5"><span>5</span></label><label class="qty__opt"><input class="visually-hidden" type="radio" name="cantidad" value="6" id="q6"><span>6</span></label></div>
-              </fieldset>
-              <p class="total-row"><span>Total</span><span class="total-values"><output class="total total--g1">42 €</output><output class="total total--v1">89 €</output><output class="total total--g2">84 €</output><output class="total total--v2">178 €</output><output class="total total--g3">126 €</output><output class="total total--v3">267 €</output><output class="total total--g4">168 €</output><output class="total total--v4">356 €</output><output class="total total--g5">210 €</output><output class="total total--v5">445 €</output><output class="total total--g6">252 €</output><output class="total total--v6">534 €</output></span></p>
-              <button class="btn btn--primary btn--block" type="submit">Comprar entradas <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
-              <p class="secure-note"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg> Pago seguro y entrada inmediata</p>
-            </form>
-          </aside>
-        </div>
-
-      <div class="modal" id="compra">
-        <a class="modal__backdrop" href="detalle.html" aria-label="Cerrar"></a>
-        <section class="success-modal" aria-labelledby="compra-titulo">
-          <span class="success-modal__icon"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 0 0 4v5h18v-5a2 2 0 0 0 0-4V3H3v5Z"/><path d="M13 7h4M13 11h4M7 7v6"/></svg></span>
-          <span class="eyebrow eyebrow--coral">Compra completada</span>
-          <h2 id="compra-titulo">Tu noche ya tiene ritmo</h2>
-          <p>Hemos enviado tus entradas a tu email. También puedes verlas en “Mis entradas”.</p>
-          <a class="btn btn--primary btn--block" href="index.html">Volver al inicio <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+        <section class="detail-empty" id="detalle-vacio" hidden>
+          <span class="eyebrow eyebrow--coral">Error 404</span>
+          <h1>No encontramos este evento</h1>
+          <p>Puede que el enlace sea antiguo o que el evento ya no esté disponible.</p>
+          <a class="btn btn--primary" href="index.html">Ver todos los eventos</a>
         </section>
-      </div>
+        <noscript><p class="detail-empty">Activa JavaScript para ver la ficha del evento.</p></noscript>
+
+        <template id="tpl-detalle">
+          <header class="detail-hero">
+            <img data-campo="imagen" src="" alt="">
+            <div class="detail-hero__gradient"></div>
+            <div class="detail-hero__content">
+              <span class="tag" data-campo="etiqueta"></span>
+              <span class="eyebrow" data-campo="eyebrow"></span>
+              <h1 data-campo="titulo"></h1>
+              <p data-campo="subtitulo"></p>
+            </div>
+            <label class="heart-button"><input class="visually-hidden" type="checkbox" data-campo="favorito"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg></label>
+          </header>
+
+          <div class="detail-layout">
+            <div class="detail-content">
+              <dl class="fact-row">
+                <div class="fact"><span class="icon-box"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg></span><div><dt>FECHA</dt><dd data-campo="fecha"></dd></div></div>
+                <div class="fact"><span class="icon-box"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><dt>HORA</dt><dd data-campo="horario"></dd></div></div>
+                <div class="fact"><span class="icon-box"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><dt>RECINTO</dt><dd data-campo="lugar"></dd></div></div>
+              </dl>
+
+              <article class="about">
+                <span class="eyebrow eyebrow--coral">Sobre el evento</span>
+                <h2 data-campo="tituloDescripcion"></h2>
+                <p data-campo="descripcion"></p>
+              </article>
+
+              <section aria-labelledby="titulo-lineup">
+                <div class="section-heading">
+                  <div>
+                    <span class="eyebrow eyebrow--coral">Line-up</span>
+                    <h2 id="titulo-lineup">Artistas que harán vibrar la noche</h2>
+                  </div>
+                </div>
+                <ol class="artist-list" data-campo="lineup"></ol>
+              </section>
+            </div>
+
+            <aside class="ticket-box" aria-labelledby="titulo-entradas">
+              <span class="eyebrow eyebrow--coral">Elige tu experiencia</span>
+              <h2 id="titulo-entradas">Tus entradas</h2>
+              <form id="form-compra" action="detalle.html" method="get" novalidate>
+                <fieldset class="ticket-options" data-campo="tipos">
+                  <legend class="visually-hidden">Tipo de entrada</legend>
+                </fieldset>
+                <fieldset class="qty">
+                  <legend class="qty__label"><strong>Cantidad</strong><small data-campo="maximo">Máximo 6 entradas</small></legend>
+                  <div class="qty__options" data-campo="cantidades"></div>
+                </fieldset>
+                <p class="ticket-summary" data-campo="resumen" aria-live="polite"></p>
+                <p class="total-row"><span>Total</span><span class="total-values"><output class="total" data-campo="total" aria-live="polite"></output></span></p>
+                <button class="btn btn--primary btn--block" type="submit" data-campo="comprar">Comprar entradas <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+                <p class="secure-note"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg> Pago seguro y entrada inmediata</p>
+              </form>
+            </aside>
+          </div>
+        </template>
+
+        <template id="tpl-artista">
+          <li>
+            <span class="artist-list__num" data-campo="num"></span>
+            <span data-campo="foto"></span>
+            <p class="artist-list__name"><strong data-campo="nombre"></strong><small data-campo="estilo"></small></p>
+            <small><time data-campo="hora"></time></small>
+          </li>
+        </template>
       </main>
 
       <footer class="site-footer">
@@ -150,7 +138,7 @@
       <!-- Navegación inferior (móvil) -->
       <nav class="bottom-nav" aria-label="Navegación móvil">
         <a href="index.html"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 9-8 9 8"/><path d="M5 10v11h14V10M9 21v-6h6v6"/></svg><span>Inicio</span></a>
-        <a href="#"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span>Buscar</span></a>
+        <a href="index.html#buscador"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span>Buscar</span></a>
         <a class="bottom-nav__create" href="crear.html" aria-label="Crear evento"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></a>
         <a href="#"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 0 0 4v5h18v-5a2 2 0 0 0 0-4V3H3v5Z"/><path d="M13 7h4M13 11h4M7 7v6"/></svg><span>Entradas</span></a>
         <a href="#"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>Perfil</span></a>
