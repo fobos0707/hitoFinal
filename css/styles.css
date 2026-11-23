@@ -340,6 +340,7 @@ h1, h2, h3, .logo { font-family: var(--font-display); }
 .filter-row { display: flex; gap: var(--space-2); margin-bottom: var(--space-5); overflow-x: auto; scrollbar-width: none; }
 .filter-row::-webkit-scrollbar { display: none; }
 .chip {
+  position: relative; /* contiene el input .visually-hidden dentro del scroll horizontal */
   flex: none;
   padding: var(--space-2) var(--space-4);
   border: 1px solid var(--color-line);
