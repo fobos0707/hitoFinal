@@ -208,20 +208,6 @@ El prototipo de Figma («Hito 2 Ritmo») es un archivo de **Figma Make** (React)
 | 9 | «Mis entradas» y «Mi perfil» sin destino | Igual | Fuera del alcance del proyecto. |
 | 10 | Fotos de Unsplash | Las mismas; si una falla, la tarjeta degrada a fondo oscuro | Evitar icono de imagen rota. |
 
----|---|---|---|
-| Dashboard | ☐ enlace al frame | `index.html` | ☐ 390 px · ☐ 820 px · ☐ 1440 px |
-| Ficha de evento | ☐ enlace al frame | `detalle.html?id=neon-pulse` | ☐ 390 px · ☐ 1440 px |
-| Crear evento | ☐ enlace al frame | `crear.html` | ☐ 390 px · ☐ 1440 px |
-| Login | ☐ enlace al frame | `login.html` | ☐ 390 px · ☐ 1440 px |
-| Registro | ☐ enlace al frame | `registro.html` | ☐ 390 px · ☐ 1440 px |
-
-Elementos del diseño que se han trasladado como variables CSS: la paleta (tinta `#101820`, coral `#f65b4e`, papel `#f7f7f3`, lima `#d8f35a`, cielo `#85d5de`), la tipografía (DM Sans para texto y Space Grotesk para titulares), la escala de espaciados de 4 px y los radios/sombras.
-
-**Diferencias conocidas respecto al diseño:**
-- El día de la semana de la ficha se calcula de la fecha real (24/05/2026 es **domingo**); Figma decía «sábado».
-- Las fotos de los eventos son de Unsplash; si una no carga, la tarjeta degrada a un fondo oscuro, sin icono de imagen rota.
-- «Mis entradas» y «Mi perfil» siguen sin destino, como en el diseño del Hito 1 (las compras ya se registran para mostrarlas en una ampliación).
-
 ---
 
 ## 5. Pruebas, validación y optimización
@@ -276,10 +262,10 @@ node tests/e2e.js          # 21 comprobaciones OK, 0 errores de consola
 
 | Categoría | Móvil | Escritorio |
 |---|---|---|
-| Rendimiento | _ | _ |
-| Accesibilidad | _ | _ |
-| Buenas prácticas | _ | _ |
-| SEO | _ | _ |
+| Rendimiento | pendiente | pendiente |
+| Accesibilidad | pendiente | pendiente |
+| Buenas prácticas | pendiente | pendiente |
+| SEO | pendiente | pendiente |
 
 ---
 
