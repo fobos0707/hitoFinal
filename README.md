@@ -7,7 +7,7 @@ Plataforma para descubrir conciertos y eventos de música en directo. Proyecto d
 - 📄 **Memoria técnica:** [docs/MEMORIA.md](docs/MEMORIA.md) · [PDF](docs/Ritmo_Hito3_Memoria.pdf)
 - 🗂️ **Repositorio:** https://github.com/fobos0707/hitoFinal
 - 📘 **Memoria completa (Hitos 1-3):** [PDF](docs/Ritmo_Memoria_Completa.pdf)
-- 📋 **Tablero Kanban:** [KANBAN.md](KANBAN.md) · _(pegar enlace al GitHub Project)_
+- 📋 **Tablero Kanban:** https://github.com/users/fobos0707/projects/7 · [KANBAN.md](KANBAN.md)
 
 ## Probar en local
 

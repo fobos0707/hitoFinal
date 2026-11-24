@@ -1,5 +1,7 @@
 # Tablero Kanban · Ritmo
 
+**Tablero:** https://github.com/users/fobos0707/projects/7
+
 Plantilla de tarjetas para crear en **GitHub Projects** (pestaña *Projects* del repositorio → *New project* → plantilla *Board*).
 Columnas: **Pendiente → En curso → Completado**. Cada tarjeta puede convertirse en *issue* y cerrarse desde el commit con `Closes #n`.
 
@@ -36,5 +38,5 @@ Columnas: **Pendiente → En curso → Completado**. Cada tarjeta puede converti
 - [ ] Publicar el sitio y comprobar la consola en la URL real
 - [ ] Pasar Lighthouse sobre la URL desplegada y anotar la puntuación
 - [x] Comparar la web con el prototipo de Figma (tabla de fidelidad de la memoria)
-- [ ] Pegar en la memoria el enlace del tablero Kanban cuando se cree
+- [x] Pegar en la memoria el enlace del tablero Kanban
 - [x] Redactar la memoria técnica (Markdown + PDF)

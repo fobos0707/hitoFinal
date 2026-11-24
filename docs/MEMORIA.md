@@ -11,7 +11,7 @@ Ritmo es una plataforma para descubrir conciertos y eventos de música en direct
 | Web desplegada | `https://fobos0707.github.io/hitoFinal/` (activa en cuanto se habilite GitHub Pages) |
 | Prototipo de Figma (Proyecto 1) | <https://www.figma.com/make/zaHzQkc5gMhns4BZ5LijFy/Hito-2-Ritmo> |
 | Repositorio de GitHub | `https://github.com/fobos0707/hitoFinal` |
-| Tablero Kanban | `https://github.com/users/<usuario>/projects/<n>` ← **pegar aquí la URL real** |
+| Tablero Kanban | <https://github.com/users/fobos0707/projects/7> |
 
 > Cuenta de prueba para la web: `marina@ritmo.com` / `Ritmo2026` (hay un botón «Rellenar» en el login).
 
@@ -309,7 +309,7 @@ Arrastrar la carpeta del proyecto a <https://app.netlify.com/drop>, o conectar e
 
 El repositorio sigue **commits convencionales** (`feat`, `fix`, `refactor`, `test`, `ci`, `docs`, `chore`) con ámbito por hito y área, de forma que el historial se lee como el avance del proyecto: Hito 1 (HTML y CSS) → Hito 2 (datos, validación, render, componentes) → Hito 3 (pruebas, correcciones, despliegue y documentación).
 
-El tablero Kanban (GitHub Projects) tiene las columnas **Pendiente → En curso → Completado**; las tarjetas sugeridas para cada sesión están en [`KANBAN.md`](../KANBAN.md).
+El tablero Kanban está en GitHub Projects (<https://github.com/users/fobos0707/projects/7>) y se alimenta de los *issues* del repositorio (24 tarjetas, etiquetadas por sesión y estado). Los *issues* cerrados aparecen en **Completado**; el listado de tarjetas por sesión está en [`KANBAN.md`](../KANBAN.md).
 
 ---
 
